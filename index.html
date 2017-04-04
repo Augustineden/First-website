@@ -8,20 +8,51 @@
     <style>
         h1 {
             size: 3em;
-            font-weight: bold;
         }
         p {
             color: blueviolet;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
-
         header {
             font-weight: bold;
+            font-style: italic;
+        }
+        .blue {
+            color: blue;
+        }
+        h2 {
+            color: red;
+            text-align: center;
+        }
+        .highlight {
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+            background-color: green;
+            opacity: .6;
+        } 
+        #mainpoint {
+            font-size: 24px;
+            font-weight: bold;
+            background-color: red;
+            opacity: .7;
+        }
+        p, h1 {
+            color: blue;
+            text-align: center;
+            font-family: 'trebuchet', 'Trebuchet MS', sans-serif;
+        }
+        #box1 {
+            width: 300px;
+            background-color:aquamarine;
+            padding: 10px;
+            border: 2px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <header>Header element: Typically this would contain things like a company logo, a tag line and occasionally some navigation elements.</header>
+    <header class="highlight"> Header element: Typically this would contain things like a company logo, a tag line and occasionally some 
+    navigation elements.</header>
     <h1>h1 element: The Home of Funky Parasols and Umbrellas - the most important heading element</h1>
     <section>
         <h2>Section 1: Whacky Websites</h2>
@@ -45,10 +76,14 @@
         <h3>Whacky Images...</h3>
         <div>
             <img src="../img/frozenfawcet.jpg" width="370" height="494" alt="picture of a frozen tap">
-        </div> 
-        <div> 
+        <p> 
             &quot; This is a photograph
             of a dripping tap that got frozen at Stepney Green City Farm the other day. Isn't it lovely.&quot;
+        </p>
+        <p class="blue" id="box1">
+            Frozen water is called ice, after the latin word icicler meaning 'frozen stuff.' there was this one time at band camp, where this guy put ice down the back of this girl's
+            t shirt and she screamed because it was cold! haha!
+        </p>
         </div> 
         </article>
         <article>
@@ -60,14 +95,14 @@
         <div>Regular DIV element</div>
     </section>
     <br>    
-    <aside>
+    <aside id="mainpoint">
         ASIDE tag: Some information that relates to the main topic - related posts etc...
     </aside>
     <hr>
     <p>Paragraph tag: Welcome!! We're so happy to see you here. It's widely known that umbrellas are good, 
     especially those that are massive and garishly designed. You need one, so just go head a buy one.</p>
     <hr>
-    <h2>Lists</h2>
+    <h2 class="highlight">Lists</h2>
     <h3>Here is an unordered list:</h3>
     <div>
         Like my shopping list...
